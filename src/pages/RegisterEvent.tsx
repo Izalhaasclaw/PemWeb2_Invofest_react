@@ -1,3 +1,4 @@
+
 import { useForm } from "react-hook-form";
 import { InputText } from "../components/ui/InputText";
 import { InputPassword } from "../components/ui/InputPassword";
@@ -44,6 +45,10 @@ export default function RegisterEvent(){
 
     return (
         <div>
+            <div className="flex justify-center items-center font-bold text-2xl">
+                <h2>Daftar Event</h2>
+            </div>
+
             <form onSubmit={handleSubmit(onSubmit)}>
 
                 <InputText

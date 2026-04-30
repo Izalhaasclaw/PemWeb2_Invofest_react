@@ -11,7 +11,6 @@ export default function AuthLayout(){
                     alt=""
                     className='w-96'
                 />
-                <h2 className="font-bold text-4xl">Invofest 2025</h2>
             </div>
 
             {/* kanan */}

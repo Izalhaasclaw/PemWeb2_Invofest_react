@@ -1,4 +1,4 @@
-import Footer from "./components/Footer";
+
 import Copetition from "./pages/Competition";
 import HomePage from "./pages/HomePage_backup"
 import LoginForm from "./pages/LoginForm";
@@ -6,6 +6,9 @@ import RegisterEvent from "./pages/RegisterEvent";
 import Seminar from "./pages/Seminar";
 import Talkshow from "./pages/Talkshow";
 import Workshop from "./pages/Workshop";
+
+
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import AuthLayout from "./layouts/AuthLayout";
@@ -28,6 +31,7 @@ function App() {
 
         <Route element={<AuthLayout/>}>
           <Route path="/Login" element={<LoginForm/>} />
+          <Route path="/Login" element={<HomePage/>} />
           <Route path="/register" element={<RegisterEvent />} />
         </Route>
 

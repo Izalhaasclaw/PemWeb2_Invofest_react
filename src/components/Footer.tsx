@@ -16,6 +16,8 @@ export const Footer: React.FC = () => {
 
     const mediaItems = [
         {label: "Instagram", href: "#", icon: <CirclePlay size={18} />},
+        {label: "Youtube", href: "#", icon: <CirclePlay size={18} />},
+
     ];
 
     return(

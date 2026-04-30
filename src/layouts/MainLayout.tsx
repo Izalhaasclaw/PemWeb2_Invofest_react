@@ -1,10 +1,10 @@
 import { Outlet } from 'react-router-dom';
-import Footer from '../components/Footer.tsx';
+import Footer from '../components/Footer';
 import Header from '../components/Header.tsx';
 
 export default function MainLayout(){
     return(
-        <div className='max-w-7xl flex flex-col justify-between'>
+        <div className='w-full min-h-screen flex flex-col justify-between'>
             <Header/>
 
             <main className="flex-1 container mx-auto py-6">

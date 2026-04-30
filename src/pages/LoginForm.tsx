@@ -1,7 +1,7 @@
-import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { InputText } from "../components/ui/InputText";
 import { InputPassword } from "../components/ui/InputPassword";
+
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import Button from "../components/ui/Button";
@@ -52,7 +52,10 @@ export default function LoginForm(){
                 />
 
                 <div>
-                    <Button type="submit" label="Login"/>
+                    
+                        <Button type="submit" label="Login" />
+                    
+
                 </div>
 
                 <div className="mt-5">
@@ -62,4 +65,3 @@ export default function LoginForm(){
         </div>
     );
 };
-
