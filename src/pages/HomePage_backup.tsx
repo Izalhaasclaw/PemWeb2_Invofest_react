@@ -36,7 +36,7 @@ function App() {
     {
       title: "Kapan dan di mana INVOFEST dilaksanakan?",
       description:
-      "INVOFEST akan diselenggarakan pada tanggal 15-17 November 2024 di Jakarta Convention Center (JCC), Jakarta, Indonesia.",
+      "INVOFEST diselenggarakan mulai tanggal 21 Oktober 2025 sampai dengan tanggal 27 November 2025. Untuk acara workshop, seminar, talkshow diadakan secara Offline di kampus 1 Universitas Harkat Negeri dan kompetisi diadakan secara Online.",
     },
     {
       title: "Apakah ada biaya pendaftaran di INVOFEST?",

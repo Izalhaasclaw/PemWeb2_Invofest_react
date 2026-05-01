@@ -6,12 +6,15 @@ import RegisterEvent from "./pages/RegisterEvent";
 import Seminar from "./pages/Seminar";
 import Talkshow from "./pages/Talkshow";
 import Workshop from "./pages/Workshop";
-
-
+import DashboardIndex from "./pages/dashboard/DashboardIndex";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import AuthLayout from "./layouts/AuthLayout";
+import ProtectedRoute from "./routes/ProtectedRoute";
+import DashboardLayout from "./layouts/DashboardLayout";
+import CategoryIndex from "./pages/dashboard/category/CategoryIndex";
+
 
 
 function App() {
@@ -35,14 +38,16 @@ function App() {
           <Route path="/register" element={<RegisterEvent />} />
         </Route>
 
+        <Route element={<ProtectedRoute />}>
+          <Route element={<DashboardLayout />}>
+            <Route path="/dashboard" element={<DashboardIndex />} />
+            <Route path="/dashboard/category" element={<CategoryIndex />} />
 
+          </Route>
+        </Route>
       </Routes>
     </BrowserRouter>
-
-
   );
-
-
 }
 
-export default App;
+export default App; 
