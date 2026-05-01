@@ -1,4 +1,3 @@
-
 import Copetition from "./pages/Competition";
 import HomePage from "./pages/HomePage_backup"
 import LoginForm from "./pages/LoginForm";
@@ -7,14 +6,15 @@ import Seminar from "./pages/Seminar";
 import Talkshow from "./pages/Talkshow";
 import Workshop from "./pages/Workshop";
 import DashboardIndex from "./pages/dashboard/DashboardIndex";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import AuthLayout from "./layouts/AuthLayout";
-import ProtectedRoute from "./routes/ProtectedRoute";
 import DashboardLayout from "./layouts/DashboardLayout";
 import CategoryIndex from "./pages/dashboard/category/CategoryIndex";
-
+import EventIndex from "./pages/dashboard/event/EventIndex";
+import PembicaraIndex from "./pages/dashboard/pembicara/PembicaraIndex";
+import CategoryCreate from "./pages/dashboard/category/CategoryCreate";
+import ProtectedRoute from "./routes/ProtectedRoute";
 
 
 function App() {
@@ -35,16 +35,21 @@ function App() {
         <Route element={<AuthLayout/>}>
           <Route path="/Login" element={<LoginForm/>} />
           <Route path="/Login" element={<HomePage/>} />
-          <Route path="/register" element={<RegisterEvent />} />
+          <Route path="/register/event" element={<RegisterEvent />} />
         </Route>
 
         <Route element={<ProtectedRoute />}>
           <Route element={<DashboardLayout />}>
             <Route path="/dashboard" element={<DashboardIndex />} />
+
             <Route path="/dashboard/category" element={<CategoryIndex />} />
 
+            <Route path="/dashboard/pembicara" element={<PembicaraIndex />} />
+            <Route path="/dashboard/event" element={<EventIndex />} />
+            <Route path="/dashboard/category/create" element={<CategoryCreate />} />
           </Route>
         </Route>
+
       </Routes>
     </BrowserRouter>
   );
