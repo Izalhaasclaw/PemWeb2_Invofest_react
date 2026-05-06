@@ -34,7 +34,7 @@ export default function LoginForm(){
  
     const onSubmit = (data: FormData) => {
         console.log(data);
-        if (data.email == "admin@gmail.com" && data.password == "admin123") {
+        if (data.email == "FaizalIsman@gmail.com" && data.password == "isman24090074") {
             alert("Login Berhasil");
 
             login(data.email);

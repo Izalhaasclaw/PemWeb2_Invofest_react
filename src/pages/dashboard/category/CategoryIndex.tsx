@@ -1,14 +1,10 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 export default function CategoryIndex() {
     return(
         <div>
-            <h1>Category</h1>
-            <p>Selamat Datang di Halaman Category</p>
-
-            <Link to="/dashboard/category/create" className="p-2 bg-green-800 text-white rounded block text-center hover:bg-green-400 cursor-pointer ">
-                Tambah Category
-            </Link>
+            <h1 className="mb-6">Ini Halaman Category</h1>
+            <Link to="/dashboard/category/create" className="bg-red-900 rounded-2xl p-2 text-white">Create New</Link>
         </div>
     );
-}
+};

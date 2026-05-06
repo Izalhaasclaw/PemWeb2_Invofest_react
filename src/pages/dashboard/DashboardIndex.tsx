@@ -1,8 +1,7 @@
 export default function DashboardIndex() {
     return (      
         <div>
-            <h1>Ambalit</h1>
-            <p>Selamat datang di dashboard</p>
+            <p>Selamat Datang di Dashboard</p>
         </div>
     )
 }

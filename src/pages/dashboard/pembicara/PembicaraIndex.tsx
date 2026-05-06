@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom";
+
 export default function PembicaraIndex() {
     return(
         <div>
-            <h1>Pembicara Index</h1>
+            <h1 className="mb-6">Ini Halaman Pembicara</h1>
+            <Link to="/dashboard/pembicara/create" className="bg-red-900 rounded-2xl p-2 text-white">Create New</Link>
         </div>
     );
-}
+};
